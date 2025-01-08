@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Logo */
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+.content-section {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Page-specific colors */
+#home {
+    background-color: yellowgreen;
+}
+
+#about {
+    background-color: lightblue;
+}
+
+#services {
+    background-color: coral;
+}
+
+#contact {
+    background-color: rgb(210, 215, 250);
+}
+
